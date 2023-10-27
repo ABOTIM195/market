@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+/* AHMAD DARWESH */
+
+:root {
+  --main-color: #19c8fa;
+
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+  width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+  width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+  width: 1170px;
+  }
+}
+.main-heading {
+  text-align: center;
+}
+
+/*  */
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #194958;
+}
+.logo img{
+  max-width: 60px;
+  height: auto;
+}
+.navmenu{
+  display: flex;
+
+}
+.navmenu a{
+  color: white;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+.navmenu a:hover{
+  color: #EE1C47;
+}
+.nav-icon{
+  display: flex;
+  align-items: center;
+}
+.nav-icon i{
+  margin-right: 20px;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all .42s ease;
+}
+.nav-icon i:hover{
+  transform: scale(1.1);
+  color: #EE1C47;
+}
+#menu-icon{
+  font-size: 35px;
+  color: white;
+  z-index: 10001;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  header nav .toggle-menu {
+    display: none;
+  }
+}
+header nav ul {
+  display: flex;
+}
+@media (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+  header nav .toggle-menu:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+  }
+  header nav ul li a {
+    padding: 15px !important;
+    padding: 15px 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+  }
+  header nav ul li a.active,
+  header nav ul li a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+  }
+  header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+    border-left: 1px solid white;
+  }
+  
+  .landing {
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url(./photo/lap1.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  .landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+  }
+}
+header nav ul li a {
+  padding: 15px 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+header nav .form {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin-left: 30px;
+  border-left: 1px solid white;
+}
+
+.landing {
+  min-height: 100vh;
+  background-color: #1f2021;
+  background-image: url(./photo/lap1.png);
+  background-size: cover;
+  position: relative;
+}
+.landing .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 60%);
+}
+.landing .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 80px;
+}
+.landing .text .content {
+  max-width: 387px;
+}
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 10%;
+    
+  }
+}
+.landing .text .content h2 {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  
+}
+.landing .text .content p {
+  font-size: 14px;
+  line-height: 2;
+}
+/* AHMAD DARWESH */
+
+
+
+
+/* start Products */
+
+.Products{
+    background-color: #053b50;
+    border-top: #eee solid 1px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #eeeeee;
+    padding-top: 15px;
+}
+
+.contener{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.card1{
+    background-color: #0f4c75;
+    color: #bbe1fa;
+    border: 1px solid #3282b8;
+    border-radius: 15px;
+    width:20em;
+    min-height: 20em;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 5px 25px #526D82;
+    transition: all .35s ease;
+    /* Jamil Edit */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card1:hover{
+    transform: scale(0.9) translateY(-5px);
+}
+
+.imag{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imag img{
+    width:200px;
+}
+
+/* jamil  */
+.image img{
+    height: 200px;
+    width: 150px;
+}
+.card1:hover .imag{
+    opacity: 0.8;
+}
+
+.text {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px;
+}
+
+.link span{
+    font-size: 1.4em;
+    color: #64ccc5;
+    margin-left: 5px;
+}
+
+.link a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.link a i{
+    background-color: #176b87;
+    color:#dafffb;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+}
+
+.card1:hover .link a i {
+    background-color: #04364a;
+}
+
+/* end Products */
+
+/* start Offers */
+
+.Offers{
+    background-color: #04364a;
+    border-top: #eee solid 1px;
+}
+.contener2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #0f4c75;
+    color: #bbe1fa;
+    border: 1px solid #3282b8;
+    border-radius: 25px;
+    width: 75%;
+    min-height: 10em;
+    box-shadow: 0 5px 25px #526D82;
+    transition: all .35s ease;
+    margin: 25px;
+    padding: 15px;
+}
+
+.card2:hover{
+    transform: scale(0.9) translateY(-5px);
+}
+
+.card2:hover .imag2{
+    opacity: 0.7;
+}
+.card2 .imag2 img {
+    width: 300px;
+    height:400px;
+}
+
+.card2 .text h4{
+    font-size: 3em;
+}
+.card2 .text{
+    margin-right: 10px;
+ }
+
+ .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.card2 .text .text-p{
+    font-size:1.5em;
+    margin: 15px 130px;
+}
+
+.card2 .text .link {
+  justify-content: center;
+}
+
+.card2 .text .link p {
+  font-size: 1.5em;
+  margin-right: 150px;
+}
+
+.card2 .text .link span {
+  font-size: 0.7em;
+  text-decoration: #64ccc5 2px line-through;
+}
+.card2:hover .link a i {
+  background-color: #04364a;
+}
+
+/* end Offers */
+
+/* footer */
+
+footer{
+  background-color: #194958;
+  border-top: 1px solid #3282b8;
+}
+
+.fcontener {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.fcontener .link a i{
+    font-size: 1.1em;
+    margin-right: 5px;
+}
+
+.fcontener .link a i:hover{
+  color: #EE1C47;
+}
+
+.ful ul li{
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.ful ul li a{
+  color:#fff;
+  text-decoration: none;
+}
+
+.ful ul li a:hover{
+  color: #EE1C47;
+}
